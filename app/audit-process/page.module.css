@@ -1,0 +1,253 @@
+.processPage {
+  padding-top: 2rem;
+}
+
+.header {
+  text-align: center;
+  padding: 4rem 0;
+  background: linear-gradient(135deg, rgba(0, 255, 136, 0.1) 0%, rgba(0, 217, 255, 0.1) 100%);
+}
+
+.header h1 {
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.introduction {
+  padding: 60px 0;
+}
+
+.introContent {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.introContent h2 {
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.introContent p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.phaseSection {
+  padding: 80px 0;
+}
+
+.phaseAlternate {
+  background: var(--bg-secondary);
+}
+
+.phaseHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.phaseNumber {
+  font-size: 3rem;
+  font-weight: 700;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  flex-shrink: 0;
+  min-width: 100px;
+}
+
+.phaseTitle h2 {
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.phaseTitle p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}
+
+.stepsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.stepCard {
+  position: relative;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.stepCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 255, 136, 0.15);
+}
+
+.stepNumber {
+  display: inline-block;
+  background: var(--gradient-primary);
+  color: var(--bg-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.stepCard h3 {
+  margin-bottom: 0.75rem;
+  color: var(--text-primary);
+  font-size: 1.25rem;
+}
+
+.stepRole {
+  color: var(--accent-primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.stepCard > p:not(.stepRole) {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+.overviewSection {
+  padding: 80px 0;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.sectionHeader h2 {
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.sectionHeader p {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+}
+
+.overviewGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.overviewIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.overviewGrid .card h3 {
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.overviewGrid .card p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.ctaSection {
+  padding: 80px 0;
+  background: linear-gradient(135deg, rgba(0, 255, 136, 0.1) 0%, rgba(0, 217, 255, 0.1) 100%);
+}
+
+.ctaContent {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.ctaContent h2 {
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.ctaContent p {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  color: var(--text-secondary);
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 968px) {
+  .phaseHeader {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .phaseNumber {
+    min-width: auto;
+    font-size: 2.5rem;
+  }
+
+  .stepsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 3rem 0;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .phaseSection,
+  .overviewSection {
+    padding: 60px 0;
+  }
+
+  .ctaButtons {
+    flex-direction: column;
+  }
+
+  .ctaButtons .btn {
+    width: 100%;
+  }
+
+  .overviewGrid {
+    grid-template-columns: 1fr;
+  }
+}

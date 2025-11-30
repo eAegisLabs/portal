@@ -1,0 +1,142 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  background: rgba(10, 14, 39, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-color);
+  z-index: 1000;
+  padding: 1rem 0;
+}
+
+.navContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.logoImage {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  padding: 6px;
+  background: rgba(0, 255, 136, 0.1);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 255, 136, 0.2);
+  filter: drop-shadow(0 2px 8px rgba(0, 255, 136, 0.3));
+  transition: all 0.3s ease;
+}
+
+.logo:hover .logoImage {
+  background: rgba(0, 255, 136, 0.15);
+  border-color: rgba(0, 255, 136, 0.4);
+  filter: drop-shadow(0 4px 16px rgba(0, 255, 136, 0.5));
+  transform: translateY(-1px);
+}
+
+.logoText {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@media (max-width: 768px) {
+  .logoImage {
+    height: 32px;
+    padding: 4px;
+    border-radius: 6px;
+  }
+  
+  .logoText {
+    font-size: 1.2rem;
+  }
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+}
+
+.navList li a {
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.navList li a:hover {
+  color: var(--accent-primary);
+}
+
+.clientPortalLink {
+  color: var(--accent-secondary) !important;
+  font-weight: 600;
+}
+
+.ctaButton {
+  flex-shrink: 0;
+}
+
+.mobileToggle {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.mobileToggle span {
+  width: 25px;
+  height: 3px;
+  background: var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 968px) {
+  .mobileToggle {
+    display: flex;
+  }
+
+  .navList {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--bg-secondary);
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+    border-top: 1px solid var(--border-color);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .navList.open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .ctaButton {
+    display: none;
+  }
+}

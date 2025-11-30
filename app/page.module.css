@@ -1,0 +1,184 @@
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(0, 255, 136, 0.1) 0%, rgba(0, 217, 255, 0.1) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(0, 255, 136, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  margin-bottom: 2.5rem;
+  line-height: 1.8;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.trustSection {
+  background: var(--bg-secondary);
+  padding: 4rem 0;
+}
+
+.trustGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.trustItem {
+  text-align: center;
+  padding: 2rem;
+}
+
+.trustNumber {
+  font-size: 3rem;
+  font-weight: 700;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.trustLabel {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.servicesSection {
+  padding: 100px 0;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.sectionHeader h2 {
+  margin-bottom: 1rem;
+}
+
+.sectionHeader p {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.serviceIcon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.serviceLink {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: var(--accent-primary);
+}
+
+.whySection {
+  background: var(--bg-secondary);
+  padding: 100px 0;
+}
+
+.whyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+}
+
+.whyItem {
+  text-align: center;
+}
+
+.whyIcon {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.whyItem h3 {
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.whyItem p {
+  color: var(--text-secondary);
+}
+
+.ctaSection {
+  padding: 100px 0;
+  background: linear-gradient(135deg, rgba(0, 255, 136, 0.1) 0%, rgba(0, 217, 255, 0.1) 100%);
+}
+
+.ctaContent {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.ctaContent h2 {
+  margin-bottom: 1rem;
+}
+
+.ctaContent p {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 80vh;
+    padding: 2rem 0;
+  }
+
+  .heroButtons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .heroButtons .btn {
+    width: 100%;
+  }
+
+  .servicesGrid {
+    grid-template-columns: 1fr;
+  }
+}

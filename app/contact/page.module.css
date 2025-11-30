@@ -1,0 +1,160 @@
+.contactPage {
+  padding-top: 2rem;
+}
+
+.header {
+  text-align: center;
+  padding: 4rem 0;
+  background: linear-gradient(135deg, rgba(0, 255, 136, 0.1) 0%, rgba(0, 217, 255, 0.1) 100%);
+}
+
+.header h1 {
+  margin-bottom: 1rem;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+}
+
+.calculatorSection {
+  padding: 80px 0;
+}
+
+.contactSection {
+  padding: 80px 0;
+  background: var(--bg-secondary);
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contactInfo h2 {
+  margin-bottom: 1rem;
+}
+
+.contactInfo > p {
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+  line-height: 1.8;
+}
+
+.infoItems {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.infoItem {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.infoIcon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.infoItem h4 {
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.infoItem p {
+  color: var(--text-secondary);
+  margin-bottom: 0.25rem;
+}
+
+.contactForm {
+  background: var(--bg-primary);
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+
+.contactForm h2 {
+  margin-bottom: 2rem;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+}
+
+.formGroup textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.successMessage {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  border: 1px solid var(--accent-primary);
+}
+
+.successMessage h3 {
+  margin-bottom: 1rem;
+  color: var(--accent-primary);
+}
+
+.successMessage p {
+  color: var(--text-secondary);
+}
+
+.errorMessage {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  border: 1px solid #ff4444;
+}
+
+.errorMessage h3 {
+  margin-bottom: 1rem;
+  color: #ff4444;
+}
+
+.errorMessage p {
+  color: var(--text-secondary);
+}
+
+@media (max-width: 968px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}

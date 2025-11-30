@@ -1,0 +1,291 @@
+.loginPage {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.loginContainer {
+  width: 100%;
+  max-width: 450px;
+}
+
+.loginCard {
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  padding: 3rem;
+  border: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.loginCard h1 {
+  margin-bottom: 0.5rem;
+}
+
+.loginCard > p {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+.formGroup label {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.formGroup input {
+  padding: 12px 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.formGroup input:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+}
+
+.loginNote {
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.portalPage {
+  padding: 4rem 0;
+}
+
+.portalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.portalHeader h1 {
+  margin-bottom: 0.5rem;
+}
+
+.portalHeader p {
+  color: var(--text-secondary);
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.projectHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 1.5rem;
+}
+
+.projectHeader h3 {
+  margin: 0;
+}
+
+.statusBadge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.statusBadge.in-progress {
+  background: rgba(0, 217, 255, 0.2);
+  color: var(--accent-secondary);
+  border: 1px solid var(--accent-secondary);
+}
+
+.statusBadge.review {
+  background: rgba(255, 193, 7, 0.2);
+  color: #ffc107;
+  border: 1px solid #ffc107;
+}
+
+.statusBadge.completed {
+  background: rgba(0, 255, 136, 0.2);
+  color: var(--accent-primary);
+  border: 1px solid var(--accent-primary);
+}
+
+.progressSection {
+  margin-bottom: 1.5rem;
+}
+
+.progressHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.progressBar {
+  height: 8px;
+  background: var(--bg-tertiary);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: var(--gradient-primary);
+  transition: width 0.3s ease;
+}
+
+.vulnerabilitiesSection {
+  margin-bottom: 1.5rem;
+}
+
+.vulnerabilitiesSection h4 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.vulnGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.vulnItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: var(--bg-tertiary);
+  border-radius: 8px;
+}
+
+.vulnLabel {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.vulnCount {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.vulnCount.critical {
+  color: #ff4444;
+}
+
+.vulnCount.high {
+  color: #ff8800;
+}
+
+.vulnCount.medium {
+  color: #ffc107;
+}
+
+.vulnCount.low {
+  color: var(--accent-secondary);
+}
+
+.projectFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.lastUpdate {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+.viewButton {
+  background: transparent;
+  border: 1px solid var(--accent-primary);
+  color: var(--accent-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.viewButton:hover {
+  background: var(--accent-primary);
+  color: var(--bg-primary);
+}
+
+.reportsSection {
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid var(--border-color);
+}
+
+.reportsSection h2 {
+  margin-bottom: 1.5rem;
+}
+
+.reportsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.reportItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background: var(--bg-primary);
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.reportItem h4 {
+  margin-bottom: 0.25rem;
+}
+
+.reportItem p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .portalHeader {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .projectsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .reportItem {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
