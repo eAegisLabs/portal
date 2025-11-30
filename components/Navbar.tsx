@@ -44,11 +44,6 @@ export default function Navbar() {
                 </Link>
               </li>
             ))}
-            <li>
-              <Link href="/client-portal" onClick={() => setIsOpen(false)} className={styles.clientPortalLink}>
-                Client Portal
-              </Link>
-            </li>
           </ul>
 
           <Link href="/contact" className={`${styles.ctaButton} btn btn-primary`}>
