@@ -136,7 +136,7 @@ The site is a standard Next.js application and can be deployed to any platform t
 Create a `.env.local` file for environment-specific variables:
 
 ```env
-NEXT_PUBLIC_SITE_URL=https://aegislabs.com
+NEXT_PUBLIC_SITE_URL=https://aegis360.xyz
 ```
 
 ## Security Notes

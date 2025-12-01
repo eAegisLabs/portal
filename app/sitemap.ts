@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://aegislabs.com'
+  const baseUrl = 'https://aegis360.xyz'
   
   return [
     {

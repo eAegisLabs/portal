@@ -26,7 +26,7 @@ export const defaultMetadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://aegislabs.com'),
+  metadataBase: new URL('https://aegis360.xyz'),
   alternates: {
     canonical: '/',
   },
@@ -37,7 +37,7 @@ export const defaultMetadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://aegislabs.com',
+    url: 'https://aegis360.xyz',
     siteName: 'Aegis Labs',
     title: 'Aegis Labs - Professional Smart Contract Audit Services',
     description: 'Secure Your Web3 Assets: Professional smart contract audit services for DeFi, NFT, and blockchain projects.',

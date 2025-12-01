@@ -175,7 +175,7 @@ export default function BlogPostPage({ params }: PageProps) {
             <h3>Share this article</h3>
             <div className={styles.shareButtons}>
               <a
-                href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent(`https://aegislabs.com/blog/${post.id}`)}`}
+                href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent(`https://aegis360.xyz/blog/${post.id}`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.shareButton}
@@ -183,7 +183,7 @@ export default function BlogPostPage({ params }: PageProps) {
                 Twitter
               </a>
               <a
-                href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(`https://aegislabs.com/blog/${post.id}`)}`}
+                href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(`https://aegis360.xyz/blog/${post.id}`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.shareButton}

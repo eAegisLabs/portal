@@ -12,9 +12,9 @@ export const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'Aegis Labs',
-  url: 'https://aegislabs.com',
-  logo: 'https://aegislabs.com/logo.png',
-  image: 'https://aegislabs.com/logo.png',
+  url: 'https://aegis360.xyz',
+  logo: 'https://aegis360.xyz/logo.png',
+  image: 'https://aegis360.xyz/logo.png',
   description: 'Professional smart contract audit services for Web3 projects',
   contactPoint: {
     '@type': 'ContactPoint',
@@ -38,7 +38,7 @@ export const serviceSchema = {
   areaServed: 'Worldwide',
   availableChannel: {
     '@type': 'ServiceChannel',
-    serviceUrl: 'https://aegislabs.com/contact',
+    serviceUrl: 'https://aegis360.xyz/contact',
   },
 }
 
@@ -47,10 +47,10 @@ export const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   name: 'Aegis Labs',
-  url: 'https://aegislabs.com',
+  url: 'https://aegis360.xyz',
   potentialAction: {
     '@type': 'SearchAction',
-    target: 'https://aegislabs.com/search?q={search_term_string}',
+    target: 'https://aegis360.xyz/search?q={search_term_string}',
     'query-input': 'required name=search_term_string',
   },
 }

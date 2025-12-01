@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Contact Us - Aegis Labs',
     description: 'Get in touch for a professional audit quote and consultation.',
-    url: 'https://aegislabs.com/contact',
+    url: 'https://aegis360.xyz/contact',
   },
 }
 

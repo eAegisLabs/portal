@@ -7,6 +7,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Services - Aegis Labs',
     description: 'Comprehensive smart contract audit services including Solidity/EVM audits, Rust/Move audits, Layer 2 protocols, and tokenomics review.',
-    url: 'https://aegislabs.com/services',
+    url: 'https://aegis360.xyz/services',
   },
 }

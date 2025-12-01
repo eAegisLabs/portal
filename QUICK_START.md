@@ -36,7 +36,7 @@ npm start
    - `app/globals.css` - CSS variables at the top
 
 3. **Domain URL** - Update in:
-   - `app/metadata.ts` - Replace `https://aegislabs.com`
+   - `app/metadata.ts` - Replace `https://aegis360.xyz`
    - `app/sitemap.ts` - Replace base URL
    - `app/robots.ts` - Replace sitemap URL
 

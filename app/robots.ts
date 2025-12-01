@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/client-portal/', '/api/'],
       },
     ],
-    sitemap: 'https://aegislabs.com/sitemap.xml',
+    sitemap: 'https://aegis360.xyz/sitemap.xml',
   }
 }
