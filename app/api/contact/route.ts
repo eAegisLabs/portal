@@ -27,7 +27,7 @@ export async function POST(request: NextRequest) {
 
     // Format message for Telegram
     const projectTypeText = projectType 
-      ? projectType.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())
+      ? projectType.replace(/_/g, ' ').replace(/\b\w/g, (l: string) => l.toUpperCase())
       : 'Not specified'
 
     const telegramMessage = `
