@@ -1,0 +1,279 @@
+.pricingPage {
+  padding-top: 2rem;
+}
+
+.header {
+  text-align: center;
+  padding: 4rem 0;
+  background: linear-gradient(135deg, rgba(0, 255, 136, 0.1) 0%, rgba(0, 217, 255, 0.1) 100%);
+}
+
+.header h1 {
+  margin-bottom: 1rem;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+}
+
+.packages {
+  padding: 80px 0;
+}
+
+.packages .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  max-width: 1400px;
+}
+
+.packageCard {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+}
+
+.featured {
+  border: 2px solid var(--accent-primary);
+  box-shadow: 0 10px 40px rgba(0, 255, 136, 0.2);
+}
+
+.featuredBadge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background: var(--gradient-primary);
+  color: var(--bg-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.packageHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.packageIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.packageHeader h2 {
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.priceRange {
+  font-size: 2rem;
+  font-weight: 700;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.packageSection {
+  margin-bottom: 2rem;
+}
+
+.packageSection h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.packageSection ul {
+  list-style: none;
+  padding: 0;
+}
+
+.packageSection ul li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.packageSection ul li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--accent-primary);
+  font-weight: bold;
+}
+
+.subList {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+.subList li {
+  font-size: 0.9rem;
+  padding: 0.25rem 0;
+}
+
+.subList li::before {
+  content: '→';
+  color: var(--text-muted);
+}
+
+.packageCard .btn {
+  margin-top: auto;
+  width: 100%;
+}
+
+.comparisonSection {
+  padding: 80px 0;
+  background: var(--bg-secondary);
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.sectionHeader h2 {
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.sectionHeader p {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  background: var(--bg-primary);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+
+.comparisonTable {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.comparisonTable th,
+.comparisonTable td {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.comparisonTable th {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  font-weight: 600;
+  text-align: center;
+}
+
+.comparisonTable td {
+  color: var(--text-secondary);
+}
+
+.packageName {
+  font-weight: 700;
+  color: var(--accent-primary) !important;
+}
+
+.featuredRow {
+  background: rgba(0, 255, 136, 0.05);
+}
+
+.featuredRow td {
+  font-weight: 600;
+}
+
+.whySection {
+  padding: 80px 0;
+}
+
+.whyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.whyIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+  text-align: center;
+}
+
+.whyGrid .card {
+  text-align: center;
+  padding: 2.5rem;
+}
+
+.whyGrid .card h3 {
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.whyGrid .card p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.ctaSection {
+  padding: 80px 0;
+  background: linear-gradient(135deg, rgba(0, 255, 136, 0.1) 0%, rgba(0, 217, 255, 0.1) 100%);
+}
+
+.ctaContent {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.ctaContent h2 {
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.ctaContent p {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 1024px) {
+  .packages .container {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 3rem 0;
+  }
+
+  .packages {
+    padding: 60px 0;
+  }
+
+  .packageCard {
+    padding: 2rem;
+  }
+
+  .priceRange {
+    font-size: 1.5rem;
+  }
+
+  .whyGrid {
+    grid-template-columns: 1fr;
+  }
+}
