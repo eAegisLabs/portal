@@ -18,6 +18,7 @@ export default function Footer() {
             <ul>
               <li><Link href="/">Home</Link></li>
               <li><Link href="/services">Services</Link></li>
+              <li><Link href="/pricing">Pricing</Link></li>
               <li><Link href="/audit-process">Audit Process</Link></li>
               <li><Link href="/team">Team</Link></li>
             </ul>
@@ -28,6 +29,7 @@ export default function Footer() {
             <ul>
               <li><Link href="/case-studies">Case Studies</Link></li>
               <li><Link href="/blog">Blog</Link></li>
+              <li><Link href="/knowledge-base">Knowledge Base</Link></li>
             </ul>
           </div>
 
