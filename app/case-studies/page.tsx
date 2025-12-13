@@ -197,7 +197,7 @@ export default function CaseStudies() {
         <div className="container">
           <div className={styles.ctaContent}>
             <h2>Ready to Secure Your Project?</h2>
-            <p>Join hundreds of projects that trust us with their security audits</p>
+            <p>Join growing teams that trust us with affordable, professional security audits</p>
             <Link href="/contact" className="btn btn-primary">
               Get Your Quote
             </Link>

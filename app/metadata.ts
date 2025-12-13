@@ -2,10 +2,10 @@ import type { Metadata } from 'next'
 
 export const defaultMetadata: Metadata = {
   title: {
-    default: 'Aegis Labs - Professional Smart Contract Audit Services',
+    default: 'Aegis Labs - Affordable Smart Contract Audits for Growing Teams',
     template: '%s | Aegis Labs',
   },
-  description: 'Secure Your Web3 Assets: Professional smart contract audit services. Providing Solidity/EVM, Rust/Move, and Layer 2 protocol audits. Protect your DeFi, NFT, and blockchain projects.',
+  description: 'Affordable smart contract audit services for small and medium teams. Transparent pricing from $1,000, fast turnaround, and expert guidance. Secure your Web3 project without breaking the budget.',
   keywords: [
     'smart contract audit',
     'Solidity security review',
@@ -39,8 +39,8 @@ export const defaultMetadata: Metadata = {
     locale: 'en_US',
     url: 'https://aegis360.xyz',
     siteName: 'Aegis Labs',
-    title: 'Aegis Labs - Professional Smart Contract Audit Services',
-    description: 'Secure Your Web3 Assets: Professional smart contract audit services for DeFi, NFT, and blockchain projects.',
+    title: 'Aegis Labs - Affordable Smart Contract Audits for Growing Teams',
+    description: 'Affordable smart contract audit services for small and medium teams. Transparent pricing, fast turnaround, and expert guidance.',
     images: [
       {
         url: '/logo.png',
@@ -52,8 +52,8 @@ export const defaultMetadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Aegis Labs - Professional Smart Contract Audit Services',
-    description: 'Secure Your Web3 Assets: Professional smart contract audit services.',
+    title: 'Aegis Labs - Affordable Smart Contract Audits for Growing Teams',
+    description: 'Affordable smart contract audit services for small and medium teams.',
     creator: '@aegislabs',
     images: ['/og-image.jpg'],
   },
@@ -74,7 +74,7 @@ export const defaultMetadata: Metadata = {
 export const pageMetadata: Record<string, Metadata> = {
   '/': {
     title: 'Home',
-    description: 'Professional smart contract audit services to secure your Web3 assets. 500+ projects audited, $2B+ assets protected.',
+    description: 'Affordable smart contract audit services for small and medium teams. Transparent pricing from $1,000, fast turnaround, and expert guidance.',
   },
   '/services': {
     title: 'Services',
@@ -103,7 +103,7 @@ export const pageMetadata: Record<string, Metadata> = {
   },
   '/contact': {
     title: 'Contact Us',
-    description: 'Get in touch for a professional audit quote and consultation. We typically respond within 24 hours.',
+    description: 'Get a free, no-obligation quote for your project. We respond within 24 hours with transparent pricing tailored to your needs.',
     keywords: ['contact smart contract auditor', 'audit quote', 'security consultation'],
   },
 }

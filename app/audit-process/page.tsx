@@ -12,11 +12,10 @@ export default function AuditProcess() {
             Version 1.0 | Effective Date: November 29, 2025
           </p>
           <p className={styles.description}>
-            Our comprehensive seven-step audit methodology ensures the highest standards of
-            professionalism, consistency, and transparency from consultation to delivery.
-            We combine advanced automated analysis tools with expert manual review to
-            maximize the identification and elimination of potential security vulnerabilities
-            and logic flaws.
+            Our streamlined audit process is designed for small and medium teams. We combine
+            automated analysis tools with expert manual review to deliver fast, affordable,
+            and comprehensive security audits. Transparent workflow, clear communication,
+            and practical solutions that fit your budget.
           </p>
         </div>
       </section>
@@ -27,11 +26,11 @@ export default function AuditProcess() {
           <div className={styles.introContent}>
             <h2>Our Methodology</h2>
             <p>
-              Aegis Labs' smart contract audit services aim to provide comprehensive security
-              protection for Web3 projects through a systematic and rigorous seven-step process.
-              Our workflow combines advanced automated analysis tools with experienced expert
-              manual review to ensure maximum discovery and elimination of potential security
-              vulnerabilities and logic defects.
+              Aegis Labs' audit methodology is built for growing teams. We provide comprehensive
+              security protection through a streamlined, transparent process. Our workflow combines
+              automated analysis tools with expert manual review, delivering fast results without
+              the enterprise overhead. Perfect for startups and small teams who need professional
+              security audits that fit their budget.
             </p>
           </div>
         </div>
@@ -314,8 +313,8 @@ export default function AuditProcess() {
       <section className={styles.ctaSection}>
         <div className="container">
           <div className={styles.ctaContent}>
-            <h2>Ready to Start Your Audit?</h2>
-            <p>Get in touch with us to discuss your project requirements</p>
+            <h2>Ready to Secure Your Project?</h2>
+            <p>Get a free quote tailored for your team size and budget. No commitment, just honest pricing</p>
             <div className={styles.ctaButtons}>
               <Link href="/contact" className="btn btn-primary">
                 Request Quote

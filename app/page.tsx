@@ -14,14 +14,13 @@ export default function Home() {
         <div className="container">
           <div className={styles.heroContent}>
             <h1 className={styles.heroTitle}>
-              Secure Your <span className="gradient-text">Web3 Assets</span>
+              Affordable Security for <span className="gradient-text">Growing Teams</span>
               <br />
-              Professional Smart Contract Audit Services
+              Smart Contract Audits That Fit Your Budget
             </h1>
             <p className={styles.heroSubtitle}>
-              We provide comprehensive smart contract security audits to help you discover
-              and fix potential vulnerabilities, ensuring the security and reliability of
-              your DeFi projects, NFT platforms, and blockchain applications.
+              We help small and medium teams secure their Web3 projects with transparent pricing,
+              fast turnaround, and expert guidance. Get professional audit services without the enterprise price tag.
             </p>
             <div className={styles.heroButtons}>
               <Link href="/contact" className="btn btn-primary">
@@ -148,29 +147,29 @@ export default function Home() {
         <div className="container">
           <div className={styles.sectionHeader}>
             <h2>Why Choose Us</h2>
-            <p>Professional, Reliable, Efficient - Your Web3 Security Partner</p>
+            <p>Built for Small Teams - Affordable, Fast, and Friendly</p>
           </div>
 
           <div className={styles.whyGrid}>
             <div className={styles.whyItem}>
-              <div className={styles.whyIcon}>🎯</div>
-              <h3>Expert Team</h3>
-              <p>Composed of experienced security experts and smart contract developers</p>
+              <div className={styles.whyIcon}>💰</div>
+              <h3>Budget-Friendly</h3>
+              <p>Transparent pricing starting from $1,000. No hidden fees, no enterprise overhead</p>
             </div>
             <div className={styles.whyItem}>
               <div className={styles.whyIcon}>⚡</div>
-              <h3>Fast Delivery</h3>
-              <p>Efficient audit process, quick response, timely report delivery</p>
+              <h3>Fast Turnaround</h3>
+              <p>Quick response times and efficient workflow. Get your audit done in days, not weeks</p>
             </div>
             <div className={styles.whyItem}>
-              <div className={styles.whyIcon}>🔍</div>
-              <h3>Deep Analysis</h3>
-              <p>Combining automated tools and manual review to ensure comprehensive coverage</p>
+              <div className={styles.whyIcon}>💬</div>
+              <h3>Direct Communication</h3>
+              <p>Work directly with our team. No account managers, no bureaucracy - just clear, friendly communication</p>
             </div>
             <div className={styles.whyItem}>
-              <div className={styles.whyIcon}>🤝</div>
-              <h3>Ongoing Support</h3>
-              <p>Continuous post-audit support and vulnerability fix verification services</p>
+              <div className={styles.whyIcon}>🎯</div>
+              <h3>Tailored for Startups</h3>
+              <p>We understand small teams. Flexible processes, practical solutions, and ongoing support that fits your needs</p>
             </div>
           </div>
         </div>
@@ -180,8 +179,8 @@ export default function Home() {
       <section className={styles.ctaSection}>
         <div className="container">
           <div className={styles.ctaContent}>
-            <h2>Ready to Start Your Audit Project?</h2>
-            <p>Contact us now for professional audit quotes and consultation</p>
+            <h2>Ready to Secure Your Project?</h2>
+            <p>Get a free quote tailored for your team size and budget. No commitment, just honest pricing</p>
             <Link href="/contact" className="btn btn-primary">
               Get Quote Now
             </Link>

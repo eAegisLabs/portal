@@ -15,7 +15,7 @@ export const organizationSchema = {
   url: 'https://aegis360.xyz',
   logo: 'https://aegis360.xyz/logo.png',
   image: 'https://aegis360.xyz/logo.png',
-  description: 'Professional smart contract audit services for Web3 projects',
+  description: 'Affordable smart contract audit services for small and medium teams',
   contactPoint: {
     '@type': 'ContactPoint',
     email: 'sunvike72@gmail.com',

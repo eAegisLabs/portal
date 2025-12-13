@@ -1,7 +1,7 @@
 {
   "name": "portal",
   "version": "1.0.0",
-  "description": "Professional Smart Contract Audit Service Website",
+  "description": "Affordable Smart Contract Audit Service Website for Small and Medium Teams",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

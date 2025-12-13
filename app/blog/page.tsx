@@ -69,8 +69,8 @@ export default function Blog() {
       <section className={styles.contactSection}>
         <div className="container">
           <div className={styles.contactContent}>
-            <h2>Need a Professional Audit?</h2>
-            <p>Contact us to discuss your project and get a customized audit quote</p>
+            <h2>Need an Affordable Audit?</h2>
+            <p>Get a free quote that fits your budget. No hidden fees, transparent pricing</p>
             <Link href="/contact" className="btn btn-primary">
               Get in Touch
             </Link>

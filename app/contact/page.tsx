@@ -64,7 +64,7 @@ export default function Contact() {
       <section className={styles.header}>
         <div className="container">
           <h1>Contact Us</h1>
-          <p>Get in touch for a professional audit quote and consultation</p>
+          <p>Get a free quote tailored for your team. No commitment, just honest pricing</p>
         </div>
       </section>
 
@@ -82,8 +82,8 @@ export default function Contact() {
             <div className={styles.contactInfo}>
               <h2>Get in Touch</h2>
               <p>
-                Have questions about our services? Need a custom quote? Want to discuss
-                your project requirements? We're here to help.
+                Have questions? Need a quote that fits your budget? Want to discuss
+                your project? We're here to help small teams succeed.
               </p>
 
               <div className={styles.infoItems}>
