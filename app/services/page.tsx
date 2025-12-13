@@ -11,7 +11,7 @@ export default function Services() {
       <section className={styles.header}>
         <div className="container">
           <h1>Our Services</h1>
-          <p>Comprehensive smart contract audit solutions for Web3 projects</p>
+          <p>Affordable audit solutions designed for small and medium teams</p>
         </div>
       </section>
 
@@ -122,7 +122,7 @@ export default function Services() {
         <div className="container">
           <div className={styles.sectionHeader}>
             <h2>Our Audit Process</h2>
-            <p>A systematic seven-step methodology ensuring highest standards of professionalism and transparency</p>
+            <p>A streamlined methodology designed for small teams - transparent, efficient, and budget-friendly</p>
           </div>
 
           <div className={styles.processPhases}>

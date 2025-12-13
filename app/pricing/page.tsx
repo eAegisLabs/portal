@@ -155,7 +155,7 @@ export default function Pricing() {
             <div className={styles.packageSection}>
               <h3>📄 Deliverables</h3>
               <ul>
-                <li>Enterprise-grade audit report (professional layout)</li>
+                <li>Comprehensive audit report (professional layout)</li>
                 <li>2 fix re-audits</li>
                 <li>Permission architecture diagrams / flowcharts</li>
                 <li>Production deployment checklist</li>
@@ -238,7 +238,7 @@ export default function Pricing() {
         <div className="container">
           <div className={styles.sectionHeader}>
             <h2>Why Choose Aegis Labs?</h2>
-            <p>Experience from real on-chain projects</p>
+            <p>Built for small teams - affordable, fast, and friendly</p>
           </div>
 
           <div className={styles.whyGrid}>
@@ -282,7 +282,7 @@ export default function Pricing() {
         <div className="container">
           <div className={styles.ctaContent}>
             <h2>Ready to Secure Your Project?</h2>
-            <p>Contact us to discuss which package best fits your needs</p>
+            <p>Get a free quote tailored to your team size and budget. No hidden fees, transparent pricing</p>
             <Link href="/contact" className="btn btn-primary">
               Request Custom Quote
             </Link>

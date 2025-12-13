@@ -10,7 +10,7 @@ export default function Footer() {
             <Link href="/" className={styles.footerLogo}>
               <img src="/logo_button.png" alt="Aegis Labs" className={styles.footerLogoImage} />
             </Link>
-            <p>Professional smart contract audit services to secure your Web3 assets.</p>
+            <p>Affordable smart contract audit services for small and medium teams. Transparent pricing, fast delivery, expert guidance.</p>
           </div>
 
           <div className={styles.footerSection}>

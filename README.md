@@ -1,6 +1,6 @@
 # Portal
 
-Professional smart contract audit service website built with Next.js 14.
+Affordable smart contract audit service website for small and medium teams, built with Next.js 14.
 
 ## Features
 

@@ -149,8 +149,8 @@ export default function KnowledgeBase() {
       <section className={styles.ctaSection}>
         <div className="container">
           <div className={styles.ctaContent}>
-            <h2>Need Professional Audit Services?</h2>
-            <p>Our experts can help secure your smart contracts</p>
+            <h2>Need an Affordable Audit?</h2>
+            <p>Get a free quote tailored for your team size and budget</p>
             <div className={styles.ctaButtons}>
               <Link href="/contact" className="btn btn-primary">
                 Get Audit Quote
