@@ -1,10 +1,12 @@
+/* Hero */
 .hero {
   min-height: 90vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, rgba(0, 255, 136, 0.1) 0%, rgba(0, 217, 255, 0.1) 100%);
+  background: var(--bg-primary);
   position: relative;
   overflow: hidden;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .hero::before {
@@ -14,7 +16,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 50% 50%, rgba(0, 255, 136, 0.1) 0%, transparent 70%);
+  background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(0, 255, 136, 0.06) 0%, transparent 60%);
   pointer-events: none;
 }
 
@@ -46,120 +48,181 @@
   flex-wrap: wrap;
 }
 
-.trustSection {
-  background: var(--bg-secondary);
+/* Sections */
+.section {
   padding: 4rem 0;
 }
 
-.trustGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
+.sectionAlt {
+  padding: 4rem 0;
+  background: var(--bg-secondary);
 }
 
-.trustItem {
+.sectionTitle {
   text-align: center;
-  padding: 2rem;
-}
-
-.trustNumber {
-  font-size: 3rem;
-  font-weight: 700;
-  background: var(--gradient-primary);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
-.trustLabel {
-  color: var(--text-secondary);
-  font-size: 1.1rem;
-}
-
-.servicesSection {
-  padding: 100px 0;
-}
-
-.sectionHeader {
+.sectionDesc {
   text-align: center;
-  margin-bottom: 4rem;
-}
-
-.sectionHeader h2 {
-  margin-bottom: 1rem;
-}
-
-.sectionHeader p {
-  font-size: 1.2rem;
   color: var(--text-secondary);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.servicesGrid {
+/* What we analyze */
+.analyzeContainer {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.analyzeList {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+  margin-bottom: 0;
 }
 
-.serviceIcon {
-  font-size: 3rem;
+.analyzeList li {
+  padding: 0.75rem 1rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.analyzeList li::before {
+  content: '→ ';
+  color: var(--accent-primary);
+  margin-right: 0.5rem;
+}
+
+/* Public Audits */
+.auditsPreview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
   margin-bottom: 1.5rem;
 }
 
-.serviceLink {
-  display: inline-block;
-  margin-top: 1rem;
+.auditPreviewCard {
+  display: block;
+  padding: 1.25rem;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s;
+}
+
+.auditPreviewCard:hover {
+  border-color: var(--accent-primary);
+}
+
+.auditProject {
+  display: block;
   font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.auditScope {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.auditFindings {
+  font-size: 0.8rem;
   color: var(--accent-primary);
 }
 
-.whySection {
-  background: var(--bg-secondary);
-  padding: 100px 0;
+.viewAll {
+  display: inline-block;
+  color: var(--accent-primary);
+  font-size: 0.95rem;
+  font-weight: 500;
 }
 
-.whyGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 3rem;
+.viewAll:hover {
+  color: var(--accent-secondary);
 }
 
-.whyItem {
+/* Audit Process */
+.processList {
+  max-width: 400px;
+  margin: 0 auto 1.5rem;
+  padding-left: 1.5rem;
+  color: var(--text-secondary);
+  line-height: 2.2;
+}
+
+.processList li {
+  margin-bottom: 0.25rem;
+}
+
+.processList + .viewAll {
+  display: block;
   text-align: center;
 }
 
-.whyIcon {
-  font-size: 3.5rem;
-  margin-bottom: 1.5rem;
+/* Sample Report */
+.reportCta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 1.25rem 2rem;
+  background: var(--bg-primary);
+  border: 1px solid var(--accent-primary);
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--accent-primary);
+  font-weight: 600;
+  transition: all 0.2s;
 }
 
-.whyItem h3 {
-  margin-bottom: 1rem;
-  color: var(--text-primary);
+.reportCta:hover {
+  background: var(--accent-primary);
+  color: var(--bg-primary);
 }
 
-.whyItem p {
-  color: var(--text-secondary);
+.arrow {
+  font-size: 1.25rem;
 }
 
+/* CTA */
 .ctaSection {
-  padding: 100px 0;
-  background: linear-gradient(135deg, rgba(0, 255, 136, 0.1) 0%, rgba(0, 217, 255, 0.1) 100%);
+  padding: 4rem 0;
+  background: var(--bg-primary);
+  border-top: 1px solid var(--border-color);
 }
 
 .ctaContent {
   text-align: center;
-  max-width: 700px;
+  max-width: 560px;
   margin: 0 auto;
 }
 
 .ctaContent h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .ctaContent p {
-  font-size: 1.2rem;
-  margin-bottom: 2.5rem;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
   color: var(--text-secondary);
 }
 
@@ -178,7 +241,7 @@
     width: 100%;
   }
 
-  .servicesGrid {
+  .auditsPreview {
     grid-template-columns: 1fr;
   }
 }

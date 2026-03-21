@@ -17,19 +17,10 @@ export default function Footer() {
             <h4>Quick Links</h4>
             <ul>
               <li><Link href="/">Home</Link></li>
-              <li><Link href="/services">Services</Link></li>
-              <li><Link href="/pricing">Pricing</Link></li>
-              <li><Link href="/audit-process">Audit Process</Link></li>
-              <li><Link href="/team">Team</Link></li>
-            </ul>
-          </div>
-
-          <div className={styles.footerSection}>
-            <h4>Resources</h4>
-            <ul>
-              <li><Link href="/case-studies">Case Studies</Link></li>
-              <li><Link href="/blog">Blog</Link></li>
-              <li><Link href="/knowledge-base">Knowledge Base</Link></li>
+              <li><Link href="/audits">Audits</Link></li>
+              <li><Link href="/research">Research</Link></li>
+              <li><Link href="/process">Process</Link></li>
+              <li><Link href="/submit">Submit</Link></li>
             </ul>
           </div>
 

@@ -33,8 +33,13 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Monaco, Consolas, monospace;
+  font-size: 0.9em;
+}
+
+pre {
+  background: #0d1117;
+  border: 1px solid var(--border-color);
 }
 
 .container {
@@ -122,9 +127,8 @@ a:hover {
 }
 
 .card:hover {
-  transform: translateY(-5px);
   border-color: var(--accent-primary);
-  box-shadow: 0 10px 40px rgba(0, 255, 136, 0.1);
+  box-shadow: 0 0 0 1px rgba(0, 255, 136, 0.2);
 }
 
 .gradient-text {

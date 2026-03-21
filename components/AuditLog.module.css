@@ -1,0 +1,59 @@
+.auditLog {
+  background: #0d1117;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', monospace;
+}
+
+.terminalHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: #161b22;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dot:nth-child(1) {
+  background: #ff5f56;
+}
+
+.dot:nth-child(2) {
+  background: #ffbd2e;
+}
+
+.dot:nth-child(3) {
+  background: #27c93f;
+}
+
+.terminalTitle {
+  margin-left: auto;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.logContent {
+  padding: 1rem 1.25rem;
+  font-size: 0.85rem;
+  line-height: 1.9;
+}
+
+.logLine {
+  color: var(--text-secondary);
+}
+
+.logTimestamp {
+  color: var(--text-muted);
+  margin-right: 0.5rem;
+}
+
+.logText {
+  color: var(--accent-primary);
+}

@@ -76,34 +76,29 @@ export const pageMetadata: Record<string, Metadata> = {
     title: 'Home',
     description: 'Affordable smart contract audit services for small and medium teams. Transparent pricing from $1,000, fast turnaround, and expert guidance.',
   },
-  '/services': {
-    title: 'Services',
-    description: 'Comprehensive smart contract audit services including Solidity/EVM audits, Rust/Move audits, Layer 2 protocols, and tokenomics review.',
-    keywords: ['smart contract audit services', 'Solidity audit', 'EVM audit', 'DeFi audit', 'blockchain security services'],
+  '/audits': {
+    title: 'Audits',
+    description: 'Public smart contract audit reports. Proof of our security expertise and methodology.',
+    keywords: ['public audit reports', 'smart contract audit', 'blockchain security proof'],
   },
-  '/audit-process': {
+  '/research': {
+    title: 'Research',
+    description: 'Technical research and security insights. Smart contract vulnerabilities, best practices, and Web3 security patterns.',
+    keywords: ['smart contract research', 'blockchain security research', 'Web3 security insights'],
+  },
+  '/process': {
     title: 'Audit Process',
     description: 'Transparent audit workflow from initial consultation to final report delivery. Learn how we secure your smart contracts.',
     keywords: ['audit process', 'smart contract audit workflow', 'security audit methodology'],
   },
-  '/team': {
-    title: 'Our Team',
-    description: 'Meet our team of security experts and smart contract developers with years of experience in blockchain security.',
-    keywords: ['security experts', 'blockchain auditors', 'smart contract developers'],
+  '/report-demo': {
+    title: 'Report Demo | Sample Audit Report',
+    description: 'See what an Aegis Labs audit report looks like. Overview, scope, methodology, findings, risk rating—with visual severity and actionable recommendations.',
+    keywords: ['audit report sample', 'security audit report', 'smart contract audit format'],
   },
-  '/case-studies': {
-    title: 'Case Studies',
-    description: 'Real-world examples of our audit work. See how we\'ve helped projects secure millions in assets.',
-    keywords: ['audit case studies', 'security audit examples', 'blockchain audit success stories'],
-  },
-  '/blog': {
-    title: 'Blog & Resources',
-    description: 'Industry insights, security best practices, and Web3 knowledge. Stay updated with the latest in blockchain security.',
-    keywords: ['blockchain security blog', 'smart contract best practices', 'Web3 security insights'],
-  },
-  '/contact': {
-    title: 'Contact Us',
-    description: 'Get a free, no-obligation quote for your project. We respond within 24 hours with transparent pricing tailored to your needs.',
-    keywords: ['contact smart contract auditor', 'audit quote', 'security consultation'],
+  '/submit': {
+    title: 'Submit Project',
+    description: 'Get a free, no-obligation quote for your project. Submit your smart contract for audit. We respond within 24 hours.',
+    keywords: ['submit audit', 'audit quote', 'smart contract audit request'],
   },
 }

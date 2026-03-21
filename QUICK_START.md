@@ -60,23 +60,13 @@ Edit CSS variables in `app/globals.css`:
 ### Update Content
 
 - **Homepage**: `app/page.tsx`
-- **Services**: `app/services/page.tsx`
-- **Team Members**: `app/team/page.tsx`
-- **Case Studies**: `app/case-studies/page.tsx`
-- **Blog Posts**: `app/blog/page.tsx`
+- **Audits**: `app/audits/data.ts`
+- **Research**: `app/research/articles.ts`
+- **Process**: `app/process/page.tsx`
 
 ## 🔧 Features to Configure
 
-### Quote Calculator
-- Pricing model in `components/QuoteCalculator.tsx`
-- Adjust multipliers for complexity and scope
-
-### Client Portal
-- Currently in demo mode
-- Connect to your authentication system
-- Integrate with your project database
-
-### Contact Form
+### Submit Form
 - Add email service integration
 - Configure form submission endpoint
 
@@ -111,7 +101,6 @@ The site is a standard Next.js application compatible with:
 
 3. **Content**
    - Add real team photos
-   - Write blog posts
    - Update case studies with real examples
 
 4. **Analytics**

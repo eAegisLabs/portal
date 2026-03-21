@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import StructuredData, { organizationSchema, serviceSchema, websiteSchema } from '@/components/StructuredData'
+import AuditLog from '@/components/AuditLog'
+import { audits } from '@/app/audits/data'
 import styles from './page.module.css'
 
 export default function Home() {
@@ -8,25 +10,24 @@ export default function Home() {
       <StructuredData data={organizationSchema} />
       <StructuredData data={serviceSchema} />
       <StructuredData data={websiteSchema} />
-      
-      {/* Hero Section */}
+
+      {/* 1. Hero — 定位 + CTA */}
       <section className={styles.hero}>
         <div className="container">
           <div className={styles.heroContent}>
             <h1 className={styles.heroTitle}>
-              Affordable Security for <span className="gradient-text">Growing Teams</span>
+              Audit complex smart contracts,
               <br />
-              Smart Contract Audits That Fit Your Budget
+              with a focus on <span className="gradient-text">bridge & cross-chain security</span>.
             </h1>
             <p className={styles.heroSubtitle}>
-              We help small and medium teams secure their Web3 projects with transparent pricing,
-              fast turnaround, and expert guidance. Get professional audit services without the enterprise price tag.
+              Get a free preliminary review in 24h.
             </p>
             <div className={styles.heroButtons}>
-              <Link href="/contact" className="btn btn-primary">
-                Get Quote Now
+              <Link href="/submit" className="btn btn-primary">
+                Submit for Free Review
               </Link>
-              <Link href="/audit-process" className="btn btn-secondary">
+              <Link href="/process" className="btn btn-secondary">
                 Learn Our Process
               </Link>
             </div>
@@ -34,155 +35,80 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Trust Badges */}
-      <section className={styles.trustSection}>
-        <div className="container">
-          <div className={styles.trustGrid}>
-            <div className={styles.trustItem}>
-              <div className={styles.trustNumber}>500+</div>
-              <div className={styles.trustLabel}>Projects Audited</div>
-            </div>
-            <div className={styles.trustItem}>
-              <div className={styles.trustNumber}>$2B+</div>
-              <div className={styles.trustLabel}>Assets Protected</div>
-            </div>
-            <div className={styles.trustItem}>
-              <div className={styles.trustNumber}>1000+</div>
-              <div className={styles.trustLabel}>Vulnerabilities Found</div>
-            </div>
-            <div className={styles.trustItem}>
-              <div className={styles.trustNumber}>98%</div>
-              <div className={styles.trustLabel}>Client Satisfaction</div>
-            </div>
-          </div>
+      {/* 2. What we analyze — 技术能力 */}
+      <section className={styles.section}>
+        <div className={`container ${styles.analyzeContainer}`}>
+          <AuditLog />
+          <h2 className={styles.sectionTitle}>What we analyze</h2>
+          <ul className={styles.analyzeList}>
+            <li>Cross-chain message verification</li>
+            <li>Replay protection</li>
+            <li>Liquidity invariants</li>
+            <li>Upgradeability risks</li>
+          </ul>
         </div>
       </section>
 
-      {/* Core Services */}
-      <section className={styles.servicesSection}>
+      {/* 3. Public Audits — 能力证明 */}
+      <section className={styles.sectionAlt}>
         <div className="container">
-          <div className={styles.sectionHeader}>
-            <h2>Core Services</h2>
-            <p>We provide comprehensive smart contract security audit services</p>
+          <h2 className={styles.sectionTitle}>Public Audits</h2>
+          <p className={styles.sectionDesc}>Proof of our methodology and findings.</p>
+          <div className={styles.auditsPreview}>
+            {audits.slice(0, 3).map((audit) => (
+              <Link
+                key={audit.slug}
+                href={`/audits/${audit.slug}`}
+                className={styles.auditPreviewCard}
+              >
+                <span className={styles.auditProject}>{audit.project}</span>
+                <span className={styles.auditScope}>{audit.scope}</span>
+                <span className={styles.auditFindings}>
+                  {audit.findings.high} High · {audit.findings.medium} Medium
+                </span>
+              </Link>
+            ))}
           </div>
-          
-          <div className={styles.servicesGrid}>
-            <div className="card">
-              <div className={styles.serviceIcon}>🔒</div>
-              <h3>Security Audits</h3>
-              <p>
-                Comprehensive smart contract security audits to identify reentrancy attacks,
-                integer overflows, access control vulnerabilities, and other common security issues.
-              </p>
-              <Link href="/services#security" className={styles.serviceLink}>
-                Learn More →
-              </Link>
-            </div>
-
-            <div className="card">
-              <div className={styles.serviceIcon}>💰</div>
-              <h3>Tokenomics Review</h3>
-              <p>
-                In-depth analysis of token issuance, distribution mechanisms, and economic models
-                to ensure the rationality and sustainability of token economics design.
-              </p>
-              <Link href="/services#tokenomics" className={styles.serviceLink}>
-                Learn More →
-              </Link>
-            </div>
-
-            <div className="card">
-              <div className={styles.serviceIcon}>🚀</div>
-              <h3>DApp Security Testing</h3>
-              <p>
-                End-to-end decentralized application security testing, including frontend
-                interactions, smart contract integration, and overall architecture assessment.
-              </p>
-              <Link href="/services#dapp" className={styles.serviceLink}>
-                Learn More →
-              </Link>
-            </div>
-
-            <div className="card">
-              <div className={styles.serviceIcon}>⚡</div>
-              <h3>Layer 2 Protocol Audits</h3>
-              <p>
-                Professional Layer 2 scaling solution audits, including security assessments
-                for Rollups, state channels, and sidechain protocols.
-              </p>
-              <Link href="/services#layer2" className={styles.serviceLink}>
-                Learn More →
-              </Link>
-            </div>
-
-            <div className="card">
-              <div className={styles.serviceIcon}>🔧</div>
-              <h3>Code Optimization</h3>
-              <p>
-                Gas optimization recommendations and code quality improvements while ensuring
-                security, enhancing contract execution efficiency.
-              </p>
-              <Link href="/services#optimization" className={styles.serviceLink}>
-                Learn More →
-              </Link>
-            </div>
-
-            <div className="card">
-              <div className={styles.serviceIcon}>📋</div>
-              <h3>Compliance Review</h3>
-              <p>
-                Evaluate whether smart contracts comply with relevant regulatory requirements,
-                helping projects meet regulatory compliance standards.
-              </p>
-              <Link href="/services#compliance" className={styles.serviceLink}>
-                Learn More →
-              </Link>
-            </div>
-          </div>
+          <Link href="/audits" className={styles.viewAll}>View all audits →</Link>
         </div>
       </section>
 
-      {/* Why Choose Us */}
-      <section className={styles.whySection}>
+      {/* 4. Audit Process — 建立信任 */}
+      <section className={styles.section}>
         <div className="container">
-          <div className={styles.sectionHeader}>
-            <h2>Why Choose Us</h2>
-            <p>Built for Small Teams - Affordable, Fast, and Friendly</p>
-          </div>
-
-          <div className={styles.whyGrid}>
-            <div className={styles.whyItem}>
-              <div className={styles.whyIcon}>💰</div>
-              <h3>Budget-Friendly</h3>
-              <p>Transparent pricing starting from $1,000. No hidden fees, no enterprise overhead</p>
-            </div>
-            <div className={styles.whyItem}>
-              <div className={styles.whyIcon}>⚡</div>
-              <h3>Fast Turnaround</h3>
-              <p>Quick response times and efficient workflow. Get your audit done in days, not weeks</p>
-            </div>
-            <div className={styles.whyItem}>
-              <div className={styles.whyIcon}>💬</div>
-              <h3>Direct Communication</h3>
-              <p>Work directly with our team. No account managers, no bureaucracy - just clear, friendly communication</p>
-            </div>
-            <div className={styles.whyItem}>
-              <div className={styles.whyIcon}>🎯</div>
-              <h3>Tailored for Startups</h3>
-              <p>We understand small teams. Flexible processes, practical solutions, and ongoing support that fits your needs</p>
-            </div>
-          </div>
+          <h2 className={styles.sectionTitle}>Audit Process</h2>
+          <p className={styles.sectionDesc}>We focus on edge cases and economic attack surfaces.</p>
+          <ol className={styles.processList}>
+            <li>Static Analysis</li>
+            <li>Manual Review</li>
+            <li>Fuzz Testing</li>
+            <li>Invariant Testing</li>
+            <li>Reporting</li>
+          </ol>
+          <Link href="/process" className={styles.viewAll}>Learn our process →</Link>
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* 5. Sample Report — 销售武器 */}
+      <section className={styles.sectionAlt}>
+        <div className="container">
+          <h2 className={styles.sectionTitle}>Sample Report</h2>
+          <p className={styles.sectionDesc}>See what you get. Overview, scope, methodology, findings, risk rating.</p>
+          <Link href="/report-demo" className={styles.reportCta}>
+            <span>View sample report</span>
+            <span className={styles.arrow}>→</span>
+          </Link>
+        </div>
+      </section>
+
+      {/* 6. CTA — Submit */}
       <section className={styles.ctaSection}>
         <div className="container">
           <div className={styles.ctaContent}>
-            <h2>Ready to Secure Your Project?</h2>
-            <p>Get a free quote tailored for your team size and budget. No commitment, just honest pricing</p>
-            <Link href="/contact" className="btn btn-primary">
-              Get Quote Now
+            <h2>Submit for Free Review</h2>
+            <p>Get a preliminary assessment in 24h. No commitment.</p>
+            <Link href="/submit" className="btn btn-primary">
+              Submit for Free Review
             </Link>
           </div>
         </div>

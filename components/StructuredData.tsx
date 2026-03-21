@@ -38,7 +38,7 @@ export const serviceSchema = {
   areaServed: 'Worldwide',
   availableChannel: {
     '@type': 'ServiceChannel',
-    serviceUrl: 'https://aegis360.xyz/contact',
+    serviceUrl: 'https://aegis360.xyz/submit',
   },
 }
 

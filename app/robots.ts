@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/client-portal/', '/api/'],
+        disallow: ['/api/'],
       },
     ],
     sitemap: 'https://aegis360.xyz/sitemap.xml',

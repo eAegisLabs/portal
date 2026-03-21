@@ -1,0 +1,163 @@
+.auditsPage {
+  padding-top: 2rem;
+}
+
+.header {
+  text-align: center;
+  padding: 4rem 0 2rem;
+  background: linear-gradient(135deg, rgba(0, 255, 136, 0.08) 0%, rgba(0, 217, 255, 0.08) 100%);
+}
+
+.header h1 {
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}
+
+.auditsSection {
+  padding: 3rem 0;
+}
+
+.auditsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1.5rem;
+}
+
+.auditCard {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.auditCard:hover {
+  border-color: var(--accent-primary);
+  transform: translateY(-2px);
+}
+
+.cardProject {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.cardScope {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.cardFindings {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.findingBadge {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-right: 0.25rem;
+}
+
+.severityHigh {
+  background: rgba(255, 68, 68, 0.2);
+  color: #ff6b6b;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.severityMedium {
+  background: rgba(255, 193, 7, 0.2);
+  color: #ffc107;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.severityLow {
+  background: rgba(0, 217, 255, 0.2);
+  color: var(--accent-secondary);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.cardHighlights {
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.highlightsLabel {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.cardHighlights ul {
+  list-style: none;
+  padding: 0.5rem 0 0;
+  margin: 0;
+}
+
+.cardHighlights li {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  padding: 0.25rem 0;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.cardHighlights li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--accent-primary);
+  font-weight: bold;
+}
+
+.viewReport {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--accent-primary);
+  font-weight: 500;
+}
+
+.ctaSection {
+  padding: 4rem 0;
+}
+
+.ctaContent {
+  text-align: center;
+}
+
+.ctaContent h2 {
+  margin-bottom: 0.5rem;
+}
+
+.ctaContent p {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+  .auditsGrid {
+    grid-template-columns: 1fr;
+  }
+}

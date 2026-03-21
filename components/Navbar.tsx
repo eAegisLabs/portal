@@ -9,13 +9,10 @@ export default function Navbar() {
 
   const navItems = [
     { href: '/', label: 'Home' },
-    { href: '/services', label: 'Services' },
-    { href: '/pricing', label: 'Pricing' },
-    { href: '/audit-process', label: 'Audit Process' },
-    { href: '/team', label: 'Team' },
-    { href: '/case-studies', label: 'Case Studies' },
-    { href: '/blog', label: 'Blog' },
-    { href: '/contact', label: 'Contact' },
+    { href: '/audits', label: 'Audits' },
+    { href: '/research', label: 'Research' },
+    { href: '/process', label: 'Process' },
+    { href: '/submit', label: 'Submit' },
   ]
 
   return (
@@ -47,8 +44,8 @@ export default function Navbar() {
             ))}
           </ul>
 
-          <Link href="/contact" className={`${styles.ctaButton} btn btn-primary`}>
-            Get Quote
+          <Link href="/submit" className={`${styles.ctaButton} btn btn-primary`}>
+            Submit for Free Review
           </Link>
         </div>
       </div>
