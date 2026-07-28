@@ -88,8 +88,38 @@
   font-weight: 600;
 }
 
+.navActions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
 .ctaButton {
   flex-shrink: 0;
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 6px;
+}
+
+.githubLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  transition: color 0.3s ease, transform 0.3s ease;
+  line-height: 0;
+}
+
+.githubLink:hover {
+  color: var(--text-primary);
+  transform: translateY(-1px);
+}
+
+.githubIcon {
+  width: 24px;
+  height: 24px;
 }
 
 .mobileToggle {
@@ -138,5 +168,14 @@
 
   .ctaButton {
     display: none;
+  }
+
+  .navActions {
+    gap: 0.75rem;
+  }
+
+  .githubIcon {
+    width: 22px;
+    height: 22px;
   }
 }
